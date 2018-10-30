@@ -32,8 +32,8 @@ theme_set(theme_minimal())
 # Retrieving basic information
 
 ```{r}
-## Define the id for Richard Feynman
-id <- 'B7vSqZsAAAAJ'
+## Get the id for Richard Feynman
+id <- get_author_ids("Richard Feymans")
 
 ## Get his profile
 l <- get_profile(id)

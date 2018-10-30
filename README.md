@@ -11,8 +11,8 @@ Individual scholars are referenced by a unique character string, which can be fo
 Basic information on a scholar can be retrieved as follows:
 
 ```
-# Define the id for Richard Feynman
-id <- 'B7vSqZsAAAAJ'
+# Get the id for Richard Feynman
+id <- get_author_ids("Richard Feymans")
 
 # Get his profile and print his name
 l <- get_profile(id)

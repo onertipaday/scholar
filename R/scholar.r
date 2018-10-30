@@ -283,14 +283,14 @@ plot_coauthors <- function(network, size_labels = 5) {
 ##' @export
 ##' @author Dominique Makowski
 author_position <- function(authorlist, author){
-  author <- sapply(strsplit(author, " "), tail, 1)
+  author <- sapply(strsplit(author, " "), utils::tail, 1)
   authors <- strsplit(as.character(authorlist), ", ")
 
   positions <- c()
   percentages <- c()
   n <- c()
   for(publication in authors){
-    names <- sapply(strsplit(publication, " "), tail, 1)
+    names <- sapply(strsplit(publication, " "), utils::tail, 1)
     position <- grep(author, names, ignore.case = TRUE)
     current_n <- length(names)
 
