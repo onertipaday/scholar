@@ -16,6 +16,7 @@ Description: Provides functions to extract citation data from Google
     Scholar.  Convenience functions are also provided for comparing
     multiple scholars and predicting future h-index values.
 LazyData: true
+Encoding: UTF-8
 Depends:
     R (>= 3.4.0)
 Imports:
@@ -33,4 +34,4 @@ Suggests:
     prettydoc,
     roxygen2
 VignetteBuilder: knitr
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
