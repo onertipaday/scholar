@@ -12,7 +12,7 @@ Basic information on a scholar can be retrieved as follows:
 
 ```
 # Get the id for Richard Feynman
-id <- get_author_ids("Richard Feymans")
+id <- get_author_ids("Richard Feyman")
 
 # Get his profile and print his name
 l <- get_profile(id)
