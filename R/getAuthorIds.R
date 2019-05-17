@@ -15,7 +15,6 @@
 get_author_ids <- function(name = "Roberto Burioni")
 {
   auths <- xml2::read_html(utils::URLencode(paste0("https://scholar.google.it/citations?view_op=search_authors&mauthors=", name)))
-  text <- rvest::html_nodes(auths, ".gsc_oai_name")
-  # auths %>% rvest::html_nodes(".gsc_oai_name") -> text
-  return(sub(".*user=([A-Za-z_0-9]+)&.*", "\\1", text))
+  text <- rvest::html_nodes(auths, ".gs_ai_pho")
+  return(sub(".*user=([A-Za-z_0-9]+)&.*", "\\1", text)[[1]])
 }
